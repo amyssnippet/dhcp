@@ -15,3 +15,5 @@ docker run -d \
   "IP=10.3.2.7; PORT=6379; echo Starting Ray at \$IP:\$PORT; ray start --address=\"\$IP:\$PORT\" && tail -f /dev/null"
 ```
 ### 4. `docker run -d --name ray-worker --restart always amyssnippetclg/dhpc:v1 "IP=10.3.2.7; PORT=6379; echo Starting Ray at %IP%:%PORT% && ray start --address=\"%IP%:%PORT%\" && tail -f NUL"`
+
+### 5. `docker run -d --name ray-worker --restart always amyssnippetclg/dhpc:v1 bash -c "IP=10.3.2.7; PORT=6379; echo Starting Ray at \$IP:\$PORT; ray start --address=\$IP:\$PORT && tail -f /dev/null"`
