@@ -6,7 +6,9 @@
 
 ### 2. `docker run -it amyssnippetclg/dhpc:v1 <ip> <port>`
 
-### 3. ```docker run -d \
+### 3. 
+```
+docker run -d \
   --name ray-worker \
   --restart always \
   amyssnippetclg/dhpc:v1 10.6.5.26 6327
